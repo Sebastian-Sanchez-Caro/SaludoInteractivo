@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <form>
+    <h1>Saludo personalizado</h1>
+
+    <label for="">Ingresa Tu Nombre:
+        <input type="text" id="nombre">
+    </label>
+    <button type="button" id="btn" onclick="mostrarNombre()">Mostrar Saludo</button>
+    <p id="saludo"><script>mostrarNombre()</script></p>
+   </form>
+   <script>
+    function mostrarNombre(){
+
+        let nombre = document.getElementById("nombre").value
+        let saludo = "Hola " + nombre +"!"
+        document.getElementById("saludo").innerText = saludo
+
+    }
+   </script>
+</body>
+</html>
+
+<!-- form  -->
+ 
